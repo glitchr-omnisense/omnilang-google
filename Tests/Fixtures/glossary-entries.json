@@ -1,0 +1,4 @@
+{"glossaryEntries": [
+    {"name": "projects/123456/locations/us-central1/glossaries/rooms/glossaryEntries/1", "termsPair": {"sourceTerm": {"languageCode": "fr", "text": "Chambre d'hôtes"}, "targetTerm": {"languageCode": "en", "text": "Bed and breakfast"}}},
+    {"name": "projects/123456/locations/us-central1/glossaries/rooms/glossaryEntries/2", "termsSet": {"terms": [{"languageCode": "fr", "text": "Nakaya"}, {"languageCode": "en", "text": "Nakaya"}, {"languageCode": "ja", "text": "なかや"}]}}
+]}

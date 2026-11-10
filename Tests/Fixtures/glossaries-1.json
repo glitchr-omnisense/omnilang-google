@@ -1,0 +1,1 @@
+{"glossaries": [{"name": "projects/123456/locations/us-central1/glossaries/rooms", "displayName": "Rooms", "languagePair": {"sourceLanguageCode": "fr", "targetLanguageCode": "en"}, "inputConfig": {"gcsSource": {"inputUri": "gs://my-bucket/rooms.tsv"}}, "entryCount": 2, "submitTime": "2026-11-10T08:00:00.123456Z", "endTime": "2026-11-10T08:00:05Z"}], "nextPageToken": "page-2"}

@@ -1,0 +1,4 @@
+{
+    "translations": [{"translatedText": "<p>Guest room</p>"}],
+    "glossaryTranslations": [{"translatedText": "<p>Bed and breakfast</p>", "glossaryConfig": {"glossary": "projects/my-project/locations/us-central1/glossaries/rooms"}}]
+}
