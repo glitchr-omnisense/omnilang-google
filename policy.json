@@ -3,7 +3,8 @@
     "provider": "google",
     "rateLimits": [
         {"max": 6000, "window": "minute", "scope": "application", "operations": [], "note": "v3 requests per project per minute (a default quota, raised on request in the Cloud console)"},
-        {"max": 600, "window": "minute", "scope": "application", "operations": ["languages"], "note": "requests for the supported languages per project per minute, v2 and v3 together"}
+        {"max": 600, "window": "minute", "scope": "application", "operations": ["languages"], "note": "requests for the supported languages per project per minute, v2 and v3 together"},
+        {"max": 6000000, "window": "minute", "scope": "application", "operations": ["detect", "translate"], "unit": "characters", "note": "characters sent to the general model per project per minute, v2 and v3 together, whitespace included; detectLanguage counts too (a custom model has 100,000 of its own, which a site using one declares)"}
     ],
     "rights": {
         "commercial": "allowed",
@@ -29,6 +30,6 @@
         "verifiedAt": "2026-11-10",
         "declaredBy": "maintainer",
         "contact": null,
-        "notes": "Read on 2026-11-10 (docs.cloud.google.com, where cloud.google.com/translate/docs now redirects). Limits: besides the request quotas declared, 6,000,000 characters a minute per project to the general model (v2 and v3 together; 100,000 to a custom model), 2,400 document pages a minute, 30,000 code points a request (v3); a quota exceeded answers 403 (User Rate Limit Exceeded), not 429. Attribution: required - the 'powered by Google Translate' graphic adjacent to every translation, linked to http://translate.google.com; a page that can be indexed marks machine-translated text as such; the product's name may not hold Google's brands. Data retention: content held briefly in memory to translate it, used for nothing but the service, never to train Google's translation; glossaries stored, encrypted, on Google Cloud. Keys: v3 takes no API key, only OAuth 2.0 tokens (a service account or Application Default Credentials). Pricing and its free tier: the pricing page could not be read on 2026-11-10, so no figure is declared. Commercial use: a Google Cloud service under its terms; caching and storage of translations: the pages read say nothing, hence unknown."
+        "notes": "Read on 2026-11-10 (docs.cloud.google.com, where cloud.google.com/translate/docs now redirects). Limits: besides the request quotas, 6,000,000 characters a minute per project to the general model (v2 and v3 together, detection included: declared in characters; 100,000 to a custom model, counted apart), 2,400 document pages a minute, 30,000 code points a request (v3); a quota exceeded answers 403 (User Rate Limit Exceeded), not 429. Attribution: required - the 'powered by Google Translate' graphic adjacent to every translation, linked to http://translate.google.com; a page that can be indexed marks machine-translated text as such; the product's name may not hold Google's brands. Data retention: content held briefly in memory to translate it, used for nothing but the service, never to train Google's translation; glossaries stored, encrypted, on Google Cloud. Keys: v3 takes no API key, only OAuth 2.0 tokens (a service account or Application Default Credentials). Pricing and its free tier: the pricing page could not be read on 2026-11-10, so no figure is declared. Commercial use: a Google Cloud service under its terms; caching and storage of translations: the pages read say nothing, hence unknown."
     }
 }

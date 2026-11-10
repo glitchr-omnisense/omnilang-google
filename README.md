@@ -31,7 +31,8 @@ its service account or Application Default Credentials and renews it, about hour
 `usage`.
 
 **Policy** ([policy.json](policy.json), read on 2026-11-10): 6,000 v3 requests a minute per project
-and 600 for the supported languages (default quotas), 6,000,000 characters a minute, a quota
+and 600 for the supported languages (default quotas), 6,000,000 characters a minute to the general
+model (`"unit": "characters"`, each translation and detection counting its characters), a quota
 exceeded answering 403; **attribution required** - the "powered by Google Translate" graphic beside
 every translation, linked to translate.google.com; content held in memory only, never used to
 train Google's translation. The pricing page could not be read: no free-tier figure is declared.
