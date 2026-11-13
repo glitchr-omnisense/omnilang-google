@@ -12,6 +12,13 @@ translation (v2, Basic, has neither).
   TSV, CSV or TMX file in Cloud Storage, so `createGlossary()` is not supported;
 - **documents** (`:translateDocument`, in a region): PDF, DOCX, PPTX, XLSX up to 20 MB, at once.
 
+```sh
+composer require omnisense/omnilang omnilang/google
+```
+
+It needs a Google Cloud project with Cloud Translation enabled and an OAuth access token. Its tests run on recorded answers and need none; omnilang's README has a first call
+on a recorded client.
+
 ```php
 use Omnilang\Google\GoogleFactory;
 use Omnilang\Model\TranslationQuery;
